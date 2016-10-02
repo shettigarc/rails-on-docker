@@ -1,0 +1,29 @@
+<% content_for :page_heading, "Notes" %>
+<% content_for :page_actions do %>
+  <%= link_to "New Note", new_note_path, class: "btn btn-sm btn-info" %>
+<% end %>
+
+<div class="row">
+  <% @notes.each do |note| %>
+  <div class="col-md-3">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title"><%= note.title %></h3>
+      </div>
+      <div class="panel-body">
+        <%= note.body %>
+      </div>
+      <div class="panel-footer">
+        <div>
+          <%= link_to 'Show', note, class: "btn btn-xs btn-primary" %>
+          <%= link_to 'Edit', edit_note_path(note), class: "btn btn-xs btn-warning" %>
+          <%= link_to 'Destroy', note, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-xs btn-danger" %>
+        </div>
+      </div>
+    </div>
+  </div>
+  <% end %>
+</div>
+
+<br>
+

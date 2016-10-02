@@ -1,0 +1,7 @@
+<% content_for :page_heading, "Edit Note" %>
+<% content_for :page_actions do %>
+  <%= link_to "Show", @note, class: "btn btn-sm btn-info" %>
+  <%= link_to "Back", notes_path, class: "btn btn-sm btn-info" %>
+<% end %>
+
+<%= render 'form', note: @note %>
