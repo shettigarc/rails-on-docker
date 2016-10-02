@@ -16,6 +16,7 @@ Learn how to use docker / docker compose to create and run rails application.
 
 ```
 mkdir ~/projects/noteapp
+cd ~/projects/noteapp
 # Create Gemfile
 # Create Dockerfile
 # Create docker-compose.yml
