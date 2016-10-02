@@ -2,7 +2,9 @@
 
 Learn how to use docker / docker compose to create and run rails application.
 
-Episode video link
+[Episode video link](https://youtu.be/a-jcTib9ZPA)
+
+[![Episode Video Link](https://i.ytimg.com/vi/a-jcTib9ZPA/hqdefault.jpg)](https://youtu.be/a-jcTib9ZPA)
 
 ## Tested on
 
