@@ -1,24 +1,29 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Learn how to use docker / docker compose to create and run rails application.
 
-Things you may want to cover:
+Episode video link
 
-* Ruby version
+## Tested on
 
-* System dependencies
+* Mac OSX - 10.10.5
+* Docker - 1.12.1
+* Docker compose - 1.8.0
 
-* Configuration
+## Instructions / commands
 
-* Database creation
+```
+mkdir ~/projects/noteapp
+# Create Gemfile
+# Create Dockerfile
+# Create docker-compose.yml
+docker-compose run app rails new . --force --database=mysql --skip-bundle
+docker-compose build
+docker-compose up
+# http://localhost:3001
+docker-compose run --rm app rails g scaffold note title body:text
+docker-compose run --rm app rake db:migrate
+# http://localhost:3001/notes
+```
 
-* Database initialization
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
