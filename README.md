@@ -1,10 +1,16 @@
-# README
+# Rails on Docker
+
+> **Update:** Check out the new course on setting up a [Rails local development environment with Docker using DevContainers](https://www.devteds.com/devcontainers-for-developers-multi-container-local-dev-setup/) 
+
+> This is an old episode and source code. Instead, I suggest you check out the new way of working with [Docker for Rails](https://youtu.be/xfeQ6vDuidA) applications
+
+[![Episode Video Link](https://i.ytimg.com/vi/xfeQ6vDuidA/hqdefault.jpg)](https://youtu.be/xfeQ6vDuidA)
+
+## Old code & episode
 
 Learn how to use docker / docker compose to create and run rails application.
 
 [Episode video link](https://youtu.be/a-jcTib9ZPA)
-
-[![Episode Video Link](https://i.ytimg.com/vi/a-jcTib9ZPA/hqdefault.jpg)](https://youtu.be/a-jcTib9ZPA)
 
 ## Tested on
 
@@ -12,7 +18,7 @@ Learn how to use docker / docker compose to create and run rails application.
 * Docker - 1.12.1
 * Docker compose - 1.8.0
 
-## Instructions / commands
+## Instructions/commands
 
 ```
 mkdir ~/projects/noteapp
